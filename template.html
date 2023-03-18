@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>template của chương trình</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="template.css">
+</head>
+
+<body>
+    <h1>đây là trang chứa template các component của chương trình</h1>
+    <!-- nơi viết code của nút -->
+    <div>1. button primary</div>
+    <br>
+    <button class="nbbutton--primary">Button</button>
+    <br>
+    <!-- nơi viết code của nút -->
+    <div>2. button secondary</div>
+    <br>
+    <button class="nbbutton--secondary">Button</button>
+    <br>
+    <!-- nơi viết code của icon -->
+    <div>3. icon</div>
+    <br>
+    <span>icon</span>
+    <span class="nbicon"></span>
+    <!-- nơi viết code của ô nhập liệu -->
+    <div>4. Input không có icon</div>
+    <br>
+    <div>
+        <span class="nbinput__label">Label</span><span class="nbinput__icon--important">*</span>
+    </div>
+    <input class="nbinput__typing" type="text" placeholder="placeholder">
+    <br>
+    <div>5. Input không có icon alert</div>
+    <br>
+    <div>
+        <span class="nbinput__label">Label</span><span class="nbinput__icon--important">*</span>
+    </div>
+    <input class="nbinput__typing nbinput__typing--alert" type="text" placeholder="placeholder">
+    <br>
+    <div>6. Input có icon</div>
+    <br>
+    <div>
+        <span class="nbinput__label">Label</span><span class="nbinput__icon--important">*</span>
+    </div>
+    <div class="nbinput__container">
+        <input class="nbinput__typing" type="text" placeholder="placeholder">
+        <span class="nbinput__icon"></span>
+    </div>
+    <div class="align-right">
+        <div>7. Context menu</div>
+        <br>
+        <div class="nbcontextmenu_container">
+            <div class="nbcontextmenu_button">
+                Sửa
+            </div>
+            <div class="nbcontextmenu_dropdownbox">
+                <div class="nbicon nbcontextmenu_icon"></div>
+                <div class="nbcontextmenu_list">
+                    <div class="nbcontextmenu_item"></div>
+                    <div class="nbcontextmenu_item"></div>
+                    <div class="nbcontextmenu_item"></div>
+                </div>
+            </div>
+        </div>
+        <div>8. Context menu open</div>
+        <br>
+        <div class="nbcontextmenu_container">
+            <div class="nbcontextmenu_button">
+                Sửa
+            </div>
+            <div class="nbcontextmenu_dropdownbox nbcontextmenu_dropdownbox--selected">
+                <div class="nbicon nbcontextmenu_icon"></div>
+                <div class="nbcontextmenu_list">
+                    <div class="nbcontextmenu_item">
+                        <div>Nhân bản</div>
+                    </div>
+                    <div class="nbcontextmenu_item">
+                        <div>Xóa</div>
+                    </div>
+                    <div class="nbcontextmenu_item">
+                        <div>Bỏ ghi</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br><br><br><br>
+    <div>9 date picker</div>
+    <br>
+    <div class="nbdatepicker">
+        <span class="nbinput__label">Label</span><span class="nbinput__icon--important">*</span>
+    </div>
+    <div>
+        <input type="date" class="nbinput__typing" type="text" placeholder="placeholder">
+    </div>
+    <br>
+
+    <br>
+    <div class="nbdatepicker">
+        <span class="nbinput__label">Label</span><span class="nbinput__icon--important">*</span>
+    </div>
+    <div>
+        <input type="date" class="nbinput__typing" type="text" placeholder="placeholder">
+    </div>
+    <br>
+
+    <div>10 popup error</div>
+    <button class="nbbutton--secondary" id="testone">Button</button>
+    <div class="nbpopup nbpopup__error nbpopup--opening" id='errorpopuptest'>
+        <div class="nbpopup__content">
+            <div class="nbpopup__upper">
+                <span class="nbicon nbpopup__icon"></span>
+                <span>Trái đất đang bị hủy diệt, vui lòng gọi lại sau</span>
+            </div>
+            <div class="nbpopup__lower">
+                <button class="nbbutton--secondary" id="testtwo">Đóng</button>
+            </div>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+
+</html>
